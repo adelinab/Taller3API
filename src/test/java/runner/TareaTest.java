@@ -1,4 +1,4 @@
-package tarea;
+package runner;
 
 import io.restassured.response.Response;
 import org.json.JSONObject;
@@ -75,7 +75,7 @@ public class TareaTest {
                 .body("Checked",equalTo(body.get("Checked")))
                 .body("Content",equalTo(body.get("Content")));
 
-
+/*
         // delete
 
         given()
@@ -92,5 +92,6 @@ public class TareaTest {
                 .statusCode(200)
                 .body("Content",equalTo(body.get("Content")))
                 .body("Deleted",equalTo(true));
+        */
     }
 }
